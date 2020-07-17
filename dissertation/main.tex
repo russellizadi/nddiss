@@ -1,0 +1,57 @@
+%\documentclass[draft, twoadvisors, sort&compress, twoside, noinfo]{nddiss2e}
+%\documentclass[review, twoadvisors, sort&compress, noinfo]{nddiss2e}
+\documentclass[final, sort&compress, noinfo, numrefs]{nddiss2e} % don't add twoside
+
+% settings
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage[mathscr]{euscript}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amsmath, amssymb}
+\usepackage{bbm}
+\usepackage{tikz}
+\usepackage[ruled, noend]{algorithm2e}
+\usetikzlibrary{positioning}
+\usetikzlibrary{bayesnet}
+\usetikzlibrary{arrows}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{caption}
+\usetikzlibrary{backgrounds}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage[mathscr]{euscript}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{transparent}
+\usepackage[acronym]{glossaries}
+\usetikzlibrary{shapes.geometric,automata}
+\usepackage[labelformat=simple, skip=0pt]{subcaption}
+
+\input{dissertation/settings}
+\input{dissertation/acronyms}
+
+\begin{document}
+\include{title}
+%\include{copyright}
+\include{abstract}
+%\include{dedication}
+\tableofcontents
+%\listoffigures
+%\listoftables
+\include{notation}
+\printnoidxglossaries
+%\include{acronyms}
+%\include{preface}
+%\include{acknowledge}
+\mainmatter
+\backmatter
+\bibliographystyle{nddiss2e}
+\bibliography{bibliography}
+\end{document}
